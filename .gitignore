@@ -1,0 +1,43 @@
+# Person and garment images: never commit these
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.heic
+*.bmp
+*.tif
+*.tiff
+
+# Data and run outputs
+data/
+outputs/
+checkpoints/
+mlruns/
+
+# Model weights
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Project PDFs contain student numbers
+documents/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
