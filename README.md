@@ -15,7 +15,7 @@ The module folders are still empty and get filled as the tasks are completed.
 | `garment/` | Garment analysis: category, fit class, mask and ratio vector |
 | `body/` | Body analysis: pose, cm/pixel scale and body measurements |
 | `fit/` | Fit engine: compares garment and body, produces the target mask |
-| `training/` | Training scripts and the cloud training environment |
+| `training/` | Training scripts and the cloud training environment, see [docs/cloud-training.md](docs/cloud-training.md) |
 | `service/` | FastAPI service and the model interface |
 | `evaluation/` | Metrics and comparison scripts |
 | `docs/` | Project documentation |
@@ -64,11 +64,12 @@ On macOS or Linux:
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-Then install the dependencies. This creates a `.venv` folder and downloads Python 3.11 if you
+Then install the dependencies. Use `--extra cu130` instead of `--extra cpu` to train on an NVIDIA
+GPU. This creates a `.venv` folder and downloads Python 3.11 if you
 do not have it, so your system Python version does not matter:
 
 ```bash
-uv sync
+uv sync --extra cpu
 ```
 
 ### 3. Everyday commands
@@ -80,7 +81,7 @@ uv sync
 | Fix import order and simple style issues | `uv run ruff check . --fix` |
 | Run a Python file | `uv run python path/to/file.py` |
 | Add a dependency | `uv add <package>` |
-| Update after pulling changes | `uv sync` |
+| Update after pulling changes | `uv sync --extra cpu` |
 
 In your IDE, select `.venv` as the Python interpreter.
 
