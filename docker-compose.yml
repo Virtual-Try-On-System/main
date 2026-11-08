@@ -2,3 +2,23 @@ services:
   test:
     build: .
     image: vton-test
+
+  train:
+    profiles: [training]
+    build:
+      context: .
+      dockerfile: training/Dockerfile
+    image: vton-train
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - ./checkpoints:/app/checkpoints
+    stop_grace_period: 60s
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
