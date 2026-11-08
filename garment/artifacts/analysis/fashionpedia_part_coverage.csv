@@ -1,0 +1,9 @@
+﻿metric,value
+sleeve_part_masks,874
+neckline_part_masks,34258
+collar_part_masks,10159
+sleeve_labeled_sleeve_masks,0
+neckline_labeled_neckline_masks,31055
+single_target_garment_images,20960
+single_mask_with_sleeve_label,0
+single_mask_with_neckline_label,12288

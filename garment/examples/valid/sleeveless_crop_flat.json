@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "image_id": "shopping100k/Female/5_T_shirts_tops/0000789_4.jpg",
+  "domain": "flat",
+  "category": { "label": "tshirt", "confidence": 0.9 },
+  "cut": [
+    { "axis": "length", "label": "crop", "confidence": 0.84, "ordinal": true, "low_confidence": false },
+    { "axis": "fit", "label": "tight", "confidence": 0.79, "ordinal": true, "low_confidence": false },
+    { "axis": "sleeve", "label": "sleeveless", "confidence": 0.98, "ordinal": true, "low_confidence": false }
+  ],
+  "mask": { "format": "polygon", "data": "100,60, 220,60, 250,300, 70,300", "source": "model" },
+  "ratios": { "length_to_chest_width": 0.92, "sleeve_to_chest_width": 0.0, "shoulder_to_chest_width": 0.88, "valid": true },
+  "size_label": "unknown",
+  "low_confidence": false,
+  "runtime_ms": 166.9
+}

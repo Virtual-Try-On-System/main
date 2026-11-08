@@ -1,0 +1,39 @@
+﻿axis,attribute_id,attribute_name,part_mask_count_train
+neckline,182,round (neck),5793
+neckline,183,v-neck,3127
+neckline,185,oval (neck),3116
+neckline,190,scoop (neck),2832
+neckline,200,straight across (neck),2421
+neckline,189,boat (neck),1795
+neckline,187,sweetheart (neckline),1744
+neckline,186,u-neck,1005
+neckline,192,plunging (neckline),965
+neckline,180,asymmetric (neckline),925
+neckline,179,collarless,883
+neckline,197,high (neck),802
+neckline,181,crew (neck),800
+neckline,203,one shoulder,693
+neckline,191,square (neckline),688
+neckline,198,turtle (neck),646
+neckline,194,halter (neck),622
+neckline,202,off-the-shoulder,581
+neckline,184,surplice (neck),469
+neckline,188,queen anne (neck),338
+neckline,201,illusion (neck),249
+neckline,199,cowl (neck),226
+neckline,193,keyhole (neck),122
+neckline,196,choker (neck),112
+neckline,195,crossover (neck),101
+collar_nickname,163,shirt (collar),5054
+collar_nickname,162,regular (collar),1441
+collar_nickname,166,banded (collar),773
+collar_nickname,170,stand-away (collar),410
+collar_nickname,173,oversized (collar),241
+collar_nickname,168,peter pan (collar),213
+collar_nickname,167,mandarin (collar),192
+collar_nickname,164,polo (collar),181
+collar_nickname,169,bow (collar),96
+collar_nickname,161,asymmetric (collar),44
+collar_nickname,165,chelsea (collar),39
+collar_nickname,172,sailor (collar),17
+collar_nickname,171,jabot (collar),8

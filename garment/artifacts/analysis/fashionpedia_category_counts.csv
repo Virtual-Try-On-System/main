@@ -1,0 +1,47 @@
+﻿category_id,category_name,supercategory,masks_train,masks_val,images_train,images_val
+0,"shirt, blouse",upperbody,6161,102,6115,102
+1,"top, t-shirt, sweatshirt",upperbody,16548,477,16176,463
+2,sweater,upperbody,1494,21,1485,21
+3,cardigan,upperbody,1107,12,1101,12
+4,jacket,upperbody,7833,183,7742,179
+5,vest,upperbody,719,22,717,21
+6,pants,lowerbody,12414,314,12347,313
+7,shorts,lowerbody,2756,106,2745,106
+8,skirt,lowerbody,5046,162,5034,162
+9,coat,wholebody,3124,104,3085,103
+10,dress,wholebody,18739,508,18666,506
+11,jumpsuit,wholebody,922,21,922,21
+12,cape,wholebody,152,5,152,5
+13,glasses,head,4855,130,4848,130
+14,hat,head,2518,74,2514,74
+15,"headband, head covering, hair accessory",head,3470,109,2984,105
+16,tie,neck,1457,3,1455,3
+17,glove,arms and hands,1385,31,757,18
+18,watch,arms and hands,3389,84,3373,82
+19,belt,waist,6851,164,6667,159
+20,leg warmer,legs and feet,112,14,61,7
+21,"tights, stockings",legs and feet,4326,122,2202,62
+22,sock,legs and feet,2582,87,1445,51
+23,shoe,legs and feet,46374,1566,23954,804
+24,"bag, wallet",others,7217,214,6907,205
+25,scarf,others,1374,48,1362,48
+26,umbrella,others,135,5,134,5
+27,hood,garment parts,1226,32,1216,32
+28,collar,garment parts,10159,218,9801,208
+29,lapel,garment parts,5972,135,5885,132
+30,epaulette,garment parts,874,14,507,7
+31,sleeve,garment parts,59448,1442,29465,742
+32,pocket,garment parts,27179,541,13174,288
+33,neckline,garment parts,34258,929,33160,895
+34,buckle,closures,3300,67,3101,64
+35,zipper,closures,7991,194,4123,105
+36,applique,decorations,3529,61,1687,28
+37,bead,decorations,5084,107,1755,33
+38,bow,decorations,528,6,391,5
+39,flower,decorations,1367,37,713,6
+40,fringe,decorations,588,30,356,11
+41,ribbon,decorations,274,9,233,5
+42,rivet,decorations,4893,143,1762,55
+43,ruffle,decorations,2407,76,1722,59
+44,sequin,decorations,929,13,371,7
+45,tassel,decorations,335,39,93,7

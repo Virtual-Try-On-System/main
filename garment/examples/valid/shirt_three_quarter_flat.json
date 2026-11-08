@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "image_id": "shopping100k/Male/4_Shirts/0000321_7.jpg",
+  "domain": "flat",
+  "category": { "label": "shirt", "confidence": 0.95 },
+  "cut": [
+    { "axis": "length", "label": "long", "confidence": 0.68, "ordinal": true, "low_confidence": false },
+    { "axis": "fit", "label": "loose", "confidence": 0.72, "ordinal": true, "low_confidence": false },
+    { "axis": "sleeve", "label": "three_quarter", "confidence": 0.83, "ordinal": true, "low_confidence": false },
+    { "axis": "neckline", "label": "mandarin", "confidence": 0.87, "ordinal": false, "low_confidence": false },
+    { "axis": "closure", "label": "button", "confidence": 0.9, "ordinal": false, "low_confidence": false }
+  ],
+  "mask": { "format": "rle", "data": "100 8 4 30 8 26 12 22 16 18 22 12 28 6", "source": "model" },
+  "ratios": { "length_to_chest_width": 1.61, "sleeve_to_chest_width": 0.97, "shoulder_to_chest_width": 1.02, "valid": true },
+  "size_label": "L",
+  "low_confidence": false,
+  "runtime_ms": 198.3
+}
