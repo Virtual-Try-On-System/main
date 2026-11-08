@@ -1,0 +1,258 @@
+{
+  "$defs": {
+    "Axis": {
+      "enum": [
+        "length",
+        "fit",
+        "sleeve",
+        "neckline",
+        "closure"
+      ],
+      "title": "Axis",
+      "type": "string"
+    },
+    "CategoryPrediction": {
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "$ref": "#/$defs/GarmentCategory"
+        },
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "label",
+        "confidence"
+      ],
+      "title": "CategoryPrediction",
+      "type": "object"
+    },
+    "CutAxis": {
+      "additionalProperties": false,
+      "description": "One cut axis prediction. Ordinal axes carry an ordered label set.",
+      "properties": {
+        "axis": {
+          "$ref": "#/$defs/Axis"
+        },
+        "label": {
+          "minLength": 1,
+          "title": "Label",
+          "type": "string"
+        },
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "ordinal": {
+          "title": "Ordinal",
+          "type": "boolean"
+        },
+        "low_confidence": {
+          "title": "Low Confidence",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "axis",
+        "label",
+        "confidence",
+        "ordinal",
+        "low_confidence"
+      ],
+      "title": "CutAxis",
+      "type": "object"
+    },
+    "Domain": {
+      "enum": [
+        "flat",
+        "on_model"
+      ],
+      "title": "Domain",
+      "type": "string"
+    },
+    "GarmentCategory": {
+      "enum": [
+        "tshirt",
+        "sweatshirt",
+        "shirt"
+      ],
+      "title": "GarmentCategory",
+      "type": "string"
+    },
+    "Mask": {
+      "additionalProperties": false,
+      "description": "Segmentation output: inline polygon/RLE data or a relative PNG path.",
+      "properties": {
+        "format": {
+          "$ref": "#/$defs/MaskFormat"
+        },
+        "data": {
+          "minLength": 1,
+          "title": "Data",
+          "type": "string"
+        },
+        "source": {
+          "$ref": "#/$defs/MaskSource"
+        }
+      },
+      "required": [
+        "format",
+        "data",
+        "source"
+      ],
+      "title": "Mask",
+      "type": "object"
+    },
+    "MaskFormat": {
+      "enum": [
+        "polygon",
+        "rle",
+        "png_path"
+      ],
+      "title": "MaskFormat",
+      "type": "string"
+    },
+    "MaskSource": {
+      "enum": [
+        "model",
+        "dataset",
+        "manual"
+      ],
+      "title": "MaskSource",
+      "type": "string"
+    },
+    "RatioVector": {
+      "additionalProperties": false,
+      "description": "Mask geometry ratios; only meaningful on flat-lay images.\n\nlength_to_chest_width = garment length / chest width,\nsleeve_to_chest_width = sleeve length / chest width,\nshoulder_to_chest_width = shoulder width / chest width.\nOn on-model images all values are None and valid is False.",
+      "properties": {
+        "length_to_chest_width": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Length To Chest Width"
+        },
+        "sleeve_to_chest_width": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Sleeve To Chest Width"
+        },
+        "shoulder_to_chest_width": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Shoulder To Chest Width"
+        },
+        "valid": {
+          "title": "Valid",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "length_to_chest_width",
+        "sleeve_to_chest_width",
+        "shoulder_to_chest_width",
+        "valid"
+      ],
+      "title": "RatioVector",
+      "type": "object"
+    },
+    "SizeLabel": {
+      "enum": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "unknown"
+      ],
+      "title": "SizeLabel",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "image_id": {
+      "minLength": 1,
+      "title": "Image Id",
+      "type": "string"
+    },
+    "domain": {
+      "$ref": "#/$defs/Domain"
+    },
+    "category": {
+      "$ref": "#/$defs/CategoryPrediction"
+    },
+    "cut": {
+      "items": {
+        "$ref": "#/$defs/CutAxis"
+      },
+      "maxItems": 5,
+      "minItems": 3,
+      "title": "Cut",
+      "type": "array"
+    },
+    "mask": {
+      "$ref": "#/$defs/Mask"
+    },
+    "ratios": {
+      "$ref": "#/$defs/RatioVector"
+    },
+    "size_label": {
+      "$ref": "#/$defs/SizeLabel"
+    },
+    "low_confidence": {
+      "title": "Low Confidence",
+      "type": "boolean"
+    },
+    "runtime_ms": {
+      "minimum": 0,
+      "title": "Runtime Ms",
+      "type": "number"
+    }
+  },
+  "required": [
+    "schema_version",
+    "image_id",
+    "domain",
+    "category",
+    "cut",
+    "mask",
+    "ratios",
+    "size_label",
+    "low_confidence",
+    "runtime_ms"
+  ],
+  "title": "GarmentDescriptor",
+  "type": "object"
+}

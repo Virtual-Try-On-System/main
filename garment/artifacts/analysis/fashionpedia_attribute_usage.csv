@@ -1,0 +1,295 @@
+﻿attribute_id,attribute_name,group,usage_train,usage_upperbody_train
+0,classic (t-shirt),nickname,5466,5462
+1,polo (shirt),nickname,198,198
+2,undershirt,nickname,573,567
+3,henley (shirt),nickname,81,81
+4,ringer (t-shirt),nickname,79,79
+5,raglan (t-shirt),nickname,172,172
+6,rugby (shirt),nickname,96,96
+7,sailor (shirt),nickname,213,213
+8,crop (top),nickname,1105,1105
+9,halter (top),nickname,360,360
+10,camisole,nickname,1041,1041
+11,tank (top),nickname,2182,2181
+12,peasant (top),nickname,238,238
+13,tube (top),nickname,475,474
+14,tunic (top),nickname,411,411
+15,smock (top),nickname,87,87
+16,hoodie,nickname,414,413
+17,blazer,nickname,2900,0
+18,pea (jacket),nickname,47,0
+19,puffer (jacket),nickname,159,0
+20,biker (jacket),nickname,1043,0
+21,trucker (jacket),nickname,445,0
+22,bomber (jacket),nickname,322,0
+23,anorak,nickname,24,0
+24,safari (jacket),nickname,83,0
+25,mao (jacket),nickname,3,0
+26,nehru (jacket),nickname,12,0
+27,norfolk (jacket),nickname,125,0
+28,classic military (jacket),nickname,44,0
+29,track (jacket),nickname,238,0
+30,windbreaker,nickname,82,0
+31,chanel (jacket),nickname,85,0
+32,bolero,nickname,94,0
+33,tuxedo (jacket),nickname,424,0
+34,varsity (jacket),nickname,96,0
+35,crop (jacket),nickname,128,0
+36,jeans,nickname,3764,0
+37,sweatpants,nickname,115,0
+38,leggings,nickname,1787,0
+39,hip-huggers (pants),nickname,103,0
+40,cargo (pants),nickname,67,0
+41,culottes,nickname,178,0
+42,capri (pants),nickname,183,0
+43,harem (pants),nickname,53,0
+44,sailor (pants),nickname,283,0
+45,jodhpur,nickname,85,0
+46,peg (pants),nickname,269,0
+47,camo (pants),nickname,23,0
+48,track (pants),nickname,33,0
+49,crop (pants),nickname,350,0
+50,short (shorts),nickname,1575,0
+51,booty (shorts),nickname,20,0
+52,bermuda (shorts),nickname,198,0
+53,cargo (shorts),nickname,25,0
+54,trunks,nickname,44,0
+55,boardshorts,nickname,20,0
+56,skort,nickname,5,0
+57,roll-up (shorts),nickname,204,0
+58,tie-up (shorts),nickname,72,0
+59,culotte (shorts),nickname,50,0
+60,lounge (shorts),nickname,160,0
+61,bloomers,nickname,5,0
+62,tutu (skirt),nickname,62,0
+63,kilt,nickname,12,0
+64,wrap (skirt),nickname,42,0
+65,skater (skirt),nickname,358,0
+66,cargo (skirt),nickname,9,0
+67,hobble (skirt),nickname,332,0
+68,sheath (skirt),nickname,1701,0
+69,ball gown (skirt),nickname,125,0
+70,gypsy (skirt),nickname,72,0
+71,rah-rah (skirt),nickname,166,0
+72,prairie (skirt),nickname,39,0
+73,flamenco (skirt),nickname,2,0
+74,accordion (skirt),nickname,91,0
+75,sarong (skirt),nickname,11,0
+76,tulip (skirt),nickname,33,0
+77,dirndl (skirt),nickname,446,0
+78,godet (skirt),nickname,21,0
+79,blanket (coat),nickname,449,0
+80,parka,nickname,130,0
+81,trench (coat),nickname,193,0
+82,pea (coat),nickname,234,0
+83,shearling (coat),nickname,55,0
+84,teddy bear (coat),nickname,180,0
+85,puffer (coat),nickname,69,0
+86,duster (coat),nickname,69,0
+87,raincoat,nickname,12,0
+88,kimono,nickname,65,0
+89,robe,nickname,26,0
+90,dress (coat ),nickname,36,0
+91,duffle (coat),nickname,34,0
+92,wrap (coat),nickname,145,0
+93,military (coat),nickname,70,0
+94,swing (coat),nickname,34,0
+95,halter (dress),nickname,604,0
+96,wrap (dress),nickname,136,0
+97,chemise (dress),nickname,55,0
+98,slip (dress),nickname,474,0
+99,cheongsams,nickname,15,0
+100,jumper (dress),nickname,285,0
+101,shift (dress),nickname,1526,0
+102,sheath (dress),nickname,2077,0
+103,shirt (dress),nickname,518,0
+104,sundress,nickname,224,0
+105,kaftan,nickname,119,0
+106,bodycon (dress),nickname,1144,0
+107,nightgown,nickname,61,0
+108,gown,nickname,5252,0
+109,sweater (dress),nickname,403,0
+110,tea (dress),nickname,65,0
+111,blouson (dress),nickname,182,0
+112,tunic (dress),nickname,915,0
+113,skater (dress),nickname,1259,0
+114,asymmetrical,silhouette,2201,345
+115,symmetrical,silhouette,60164,22183
+116,peplum,silhouette,226,123
+117,circle,silhouette,1462,0
+118,flare,silhouette,1180,0
+119,fit and flare,silhouette,3408,0
+120,trumpet,silhouette,758,2
+121,mermaid,silhouette,669,0
+122,balloon,silhouette,169,0
+123,bell,silhouette,937,0
+124,bell bottom,silhouette,43,0
+125,bootcut,silhouette,257,0
+126,peg,silhouette,918,1
+127,pencil,silhouette,3538,0
+128,straight,silhouette,6801,2
+129,a-line,silhouette,4111,0
+130,tent,silhouette,444,0
+131,baggy,silhouette,77,0
+132,wide leg,silhouette,590,0
+133,high low,silhouette,663,1
+134,curved (fit),silhouette,111,8
+135,tight (fit),silhouette,13473,6762
+136,regular (fit),silhouette,24669,12010
+137,loose (fit),silhouette,4990,2029
+138,oversized,silhouette,670,214
+139,empire waistline,waistline,380,112
+140,dropped waistline,waistline,872,83
+141,high waist,waistline,11532,1927
+142,normal waist,waistline,25019,6044
+143,low waist,waistline,3682,2
+144,basque (wasitline),waistline,134,21
+145,no waistline,waistline,18942,11609
+146,above-the-hip (length),length,17444,13472
+147,hip (length),length,10109,6414
+148,micro (length),length,3190,801
+149,mini (length),length,9545,489
+150,above-the-knee (length),length,4153,32
+151,knee (length),length,2662,28
+152,below the knee (length),length,1511,8
+153,midi,length,2266,24
+154,maxi (length),length,9376,3
+155,floor (length),length,5338,2
+156,sleeveless,length,303,0
+157,short (length),length,13141,0
+158,elbow-length,length,3149,0
+159,three quarter (length),length,6165,2
+160,wrist-length,length,34135,15
+161,asymmetric (collar),nickname,44,0
+162,regular (collar),nickname,1442,1
+163,shirt (collar),nickname,5058,4
+164,polo (collar),nickname,181,0
+165,chelsea (collar),nickname,39,0
+166,banded (collar),nickname,773,0
+167,mandarin (collar),nickname,192,0
+168,peter pan (collar),nickname,213,0
+169,bow (collar),nickname,96,0
+170,stand-away (collar),nickname,410,0
+171,jabot (collar),nickname,8,0
+172,sailor (collar),nickname,17,0
+173,oversized (collar),nickname,241,0
+174,notched (lapel),nickname,2626,0
+175,peak (lapel),nickname,717,0
+176,shawl (lapel),nickname,700,0
+177,napoleon (lapel),nickname,776,0
+178,oversized (lapel),nickname,447,0
+179,collarless,neckline type,884,1
+180,asymmetric (neckline),neckline type,926,0
+181,crew (neck),neckline type,804,4
+182,round (neck),neckline type,5810,15
+183,v-neck,neckline type,3130,2
+184,surplice (neck),neckline type,469,0
+185,oval (neck),neckline type,3117,1
+186,u-neck,neckline type,1005,0
+187,sweetheart (neckline),neckline type,1745,0
+188,queen anne (neck),neckline type,338,0
+189,boat (neck),neckline type,1795,0
+190,scoop (neck),neckline type,2835,0
+191,square (neckline),neckline type,688,0
+192,plunging (neckline),neckline type,966,0
+193,keyhole (neck),neckline type,122,0
+194,halter (neck),neckline type,622,0
+195,crossover (neck),neckline type,101,0
+196,choker (neck),neckline type,112,0
+197,high (neck),neckline type,804,2
+198,turtle (neck),neckline type,651,5
+199,cowl (neck),neckline type,228,1
+200,straight across (neck),neckline type,2425,0
+201,illusion (neck),neckline type,249,0
+202,off-the-shoulder,neckline type,581,0
+203,one shoulder,neckline type,694,0
+204,set-in sleeve,nickname,39004,10
+205,dropped-shoulder sleeve,nickname,3147,0
+206,raglan (sleeve),nickname,1894,0
+207,cap (sleeve),nickname,2721,0
+208,tulip (sleeve),nickname,225,0
+209,puff (sleeve),nickname,951,0
+210,bell (sleeve),nickname,579,0
+211,circular flounce (sleeve),nickname,470,0
+212,poet (sleeve),nickname,349,0
+213,"dolman (sleeve), batwing (sleeve)",nickname,972,0
+214,bishop (sleeve),nickname,559,0
+215,leg of mutton (sleeve),nickname,319,0
+216,kimono (sleeve),nickname,618,0
+217,cargo (pocket),nickname,232,0
+218,patch (pocket),nickname,5076,0
+219,welt (pocket),nickname,5460,0
+220,kangaroo (pocket),nickname,552,0
+221,seam (pocket),nickname,847,0
+222,slash (pocket),nickname,4317,0
+223,curved (pocket),nickname,5064,0
+224,flap (pocket),nickname,5284,0
+225,single breasted,opening type,12175,6019
+226,double breasted,opening type,636,11
+227,lace up,opening type,351,51
+228,wrapping,opening type,977,156
+229,zip-up,opening type,16859,95
+230,fly (opening),opening type,9030,0
+231,chained (opening),opening type,19,2
+232,buckled (opening),opening type,92,5
+233,toggled (opening),opening type,58,3
+234,no opening,opening type,4542,49
+281,plastic,non-textile material type,3108,292
+282,rubber,non-textile material type,188,22
+283,metal,non-textile material type,1135,72
+285,feather,non-textile material type,43,2
+286,gem,non-textile material type,793,61
+287,bone,non-textile material type,2,0
+288,ivory,non-textile material type,1,0
+289,fur,non-textile material type,730,28
+290,suede,leather,84,5
+291,shearling,leather,76,0
+292,crocodile,leather,24,2
+293,snakeskin,leather,15,1
+294,wood,non-textile material type,4,0
+295,no non-textile material,non-textile material type,65854,22147
+296,burnout,"textile finishing, manufacturing techniques",484,122
+297,distressed,"textile finishing, manufacturing techniques",856,22
+298,washed,"textile finishing, manufacturing techniques",3909,173
+299,embossed,"textile finishing, manufacturing techniques",86,24
+300,frayed,"textile finishing, manufacturing techniques",500,6
+301,printed,"textile finishing, manufacturing techniques",8028,4604
+302,ruched,"textile finishing, manufacturing techniques",1359,170
+303,quilted,"textile finishing, manufacturing techniques",234,4
+304,pleat,"textile finishing, manufacturing techniques",2321,231
+305,gathering,"textile finishing, manufacturing techniques",4778,603
+306,smocking,"textile finishing, manufacturing techniques",152,25
+307,tiered,"textile finishing, manufacturing techniques",545,37
+308,cutout,"textile finishing, manufacturing techniques",765,188
+309,slit,"textile finishing, manufacturing techniques",973,24
+310,perforated,"textile finishing, manufacturing techniques",181,74
+311,lining,"textile finishing, manufacturing techniques",10243,24
+312,applique(a),"textile finishing, manufacturing techniques",2156,446
+313,bead(a),"textile finishing, manufacturing techniques",2030,198
+314,rivet(a),"textile finishing, manufacturing techniques",763,155
+315,sequin(a),"textile finishing, manufacturing techniques",536,90
+316,no special manufacturing technique,"textile finishing, manufacturing techniques",38349,16073
+317,plain (pattern),textile pattern,58468,18017
+318,abstract,textile pattern,1478,517
+319,cartoon,textile pattern,893,467
+320,"letters, numbers",textile pattern,1674,1490
+321,camouflage,textile pattern,147,66
+322,check,textile pattern,2275,889
+323,dot,textile pattern,1062,339
+324,fair isle,textile pattern,355,130
+325,floral,textile pattern,3579,660
+326,geometric,textile pattern,1240,333
+327,paisley,textile pattern,303,62
+328,stripe,textile pattern,2981,1307
+329,houndstooth (pattern),textile pattern,97,15
+330,herringbone (pattern),textile pattern,78,23
+331,chevron,textile pattern,188,43
+332,argyle,textile pattern,114,44
+333,leopard,animal,210,66
+334,snakeskin (pattern),animal,100,15
+335,cheetah,animal,137,46
+336,peacock,animal,30,5
+337,zebra,animal,71,19
+338,giraffe,animal,44,16
+339,toile de jouy,textile pattern,364,23
+340,plant,textile pattern,430,123

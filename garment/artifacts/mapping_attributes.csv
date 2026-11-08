@@ -1,0 +1,158 @@
+﻿source,axis,group,value_id,value_name,target_class,note
+fashionpedia,length,length,146,above-the-hip (length),short,above-the-hip
+fashionpedia,length,length,147,hip (length),regular,hip
+fashionpedia,length,length,148,micro (length),crop,micro; crop on upper body
+fashionpedia,length,length,149,mini (length),crop,mini; crop on upper body
+fashionpedia,length,length,150,above-the-knee (length),long,above-the-knee
+fashionpedia,length,length,151,knee (length),long,knee
+fashionpedia,length,length,152,below the knee (length),long,below the knee
+fashionpedia,length,length,153,midi,long,midi
+fashionpedia,length,length,154,maxi (length),long,maxi
+fashionpedia,length,length,155,floor (length),long,floor
+fashionpedia,length,nickname,8,crop (top),crop,"crop (top); PRIORITY rule, overrides length value"
+fashionpedia,sleeve,length,156,sleeveless,sleeveless,Sleeve labels effectively absent in FP (~0.1%); unused in training. sleeveless
+fashionpedia,sleeve,length,157,short (length),short,Sleeve labels effectively absent in FP (~0.1%); unused in training. short
+fashionpedia,sleeve,length,158,elbow-length,short,Sleeve labels effectively absent in FP (~0.1%); unused in training. elbow-length
+fashionpedia,sleeve,length,159,three quarter (length),three_quarter,Sleeve labels effectively absent in FP (~0.1%); unused in training. three quarter
+fashionpedia,sleeve,length,160,wrist-length,long,Sleeve labels effectively absent in FP (~0.1%); unused in training. wrist-length
+fashionpedia,fit,silhouette,114,asymmetrical,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,115,symmetrical,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,116,peplum,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,117,circle,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,118,flare,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,119,fit and flare,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,120,trumpet,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,121,mermaid,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,122,balloon,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,123,bell,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,124,bell bottom,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,125,bootcut,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,126,peg,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,127,pencil,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,128,straight,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,129,a-line,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,130,tent,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,131,baggy,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,132,wide leg,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,133,high low,OUT,"silhouette shape, not a fit value"
+fashionpedia,fit,silhouette,134,curved (fit),tight,curved (fit)
+fashionpedia,fit,silhouette,135,tight (fit),tight,tight (fit)
+fashionpedia,fit,silhouette,136,regular (fit),regular,regular (fit)
+fashionpedia,fit,silhouette,137,loose (fit),loose,loose (fit)
+fashionpedia,fit,silhouette,138,oversized,oversize,oversized
+fashionpedia,neckline,neckline type,179,collarless,collarless,
+fashionpedia,neckline,neckline type,180,asymmetric (neckline),other,
+fashionpedia,neckline,neckline type,181,crew (neck),round,
+fashionpedia,neckline,neckline type,182,round (neck),round,
+fashionpedia,neckline,neckline type,183,v-neck,v_neck,
+fashionpedia,neckline,neckline type,184,surplice (neck),other,
+fashionpedia,neckline,neckline type,185,oval (neck),round,
+fashionpedia,neckline,neckline type,186,u-neck,round,
+fashionpedia,neckline,neckline type,187,sweetheart (neckline),other,
+fashionpedia,neckline,neckline type,188,queen anne (neck),other,
+fashionpedia,neckline,neckline type,189,boat (neck),boat,
+fashionpedia,neckline,neckline type,190,scoop (neck),round,
+fashionpedia,neckline,neckline type,191,square (neckline),square,
+fashionpedia,neckline,neckline type,192,plunging (neckline),v_neck,plunging = deep v
+fashionpedia,neckline,neckline type,193,keyhole (neck),other,
+fashionpedia,neckline,neckline type,194,halter (neck),other,
+fashionpedia,neckline,neckline type,195,crossover (neck),other,
+fashionpedia,neckline,neckline type,196,choker (neck),other,
+fashionpedia,neckline,neckline type,197,high (neck),mandarin,high neck = stand collar
+fashionpedia,neckline,neckline type,198,turtle (neck),mandarin,turtle = stand collar group
+fashionpedia,neckline,neckline type,199,cowl (neck),other,
+fashionpedia,neckline,neckline type,200,straight across (neck),other,
+fashionpedia,neckline,neckline type,201,illusion (neck),other,
+fashionpedia,neckline,neckline type,202,off-the-shoulder,off_shoulder,
+fashionpedia,neckline,neckline type,203,one shoulder,off_shoulder,
+fashionpedia,neckline,nickname,161,asymmetric (collar),other,
+fashionpedia,neckline,nickname,162,regular (collar),shirt_collar,
+fashionpedia,neckline,nickname,163,shirt (collar),shirt_collar,
+fashionpedia,neckline,nickname,164,polo (collar),polo,
+fashionpedia,neckline,nickname,165,chelsea (collar),other,
+fashionpedia,neckline,nickname,166,banded (collar),mandarin,
+fashionpedia,neckline,nickname,167,mandarin (collar),mandarin,
+fashionpedia,neckline,nickname,168,peter pan (collar),other,
+fashionpedia,neckline,nickname,169,bow (collar),other,
+fashionpedia,neckline,nickname,170,stand-away (collar),other,
+fashionpedia,neckline,nickname,171,jabot (collar),other,
+fashionpedia,neckline,nickname,172,sailor (collar),other,
+fashionpedia,neckline,nickname,173,oversized (collar),other,
+fashionpedia,neckline,nickname,174,notched (lapel),OUT,"lapel type, not a neckline class"
+fashionpedia,neckline,nickname,175,peak (lapel),OUT,"lapel type, not a neckline class"
+fashionpedia,neckline,nickname,176,shawl (lapel),OUT,"lapel type, not a neckline class"
+fashionpedia,neckline,nickname,177,napoleon (lapel),OUT,"lapel type, not a neckline class"
+fashionpedia,neckline,nickname,178,oversized (lapel),OUT,"lapel type, not a neckline class"
+fashionpedia,closure,opening type,225,single breasted,button,
+fashionpedia,closure,opening type,226,double breasted,button,
+fashionpedia,closure,opening type,227,lace up,other,
+fashionpedia,closure,opening type,228,wrapping,other,
+fashionpedia,closure,opening type,229,zip-up,zip,
+fashionpedia,closure,opening type,230,fly (opening),other,
+fashionpedia,closure,opening type,231,chained (opening),other,
+fashionpedia,closure,opening type,232,buckled (opening),other,
+fashionpedia,closure,opening type,233,toggled (opening),other,
+fashionpedia,closure,opening type,234,no opening,none,
+shopping100k,fit,fit,0,Bootcut,OUT,trouser-specific value
+shopping100k,fit,fit,1,Flared,OUT,trouser-specific value
+shopping100k,fit,fit,2,High waist,OUT,trouser-specific value
+shopping100k,fit,fit,3,Jeggings,OUT,trouser-specific value
+shopping100k,fit,fit,4,Large,loose,
+shopping100k,fit,fit,5,Loose,loose,
+shopping100k,fit,fit,6,Low,OUT,trouser-specific value
+shopping100k,fit,fit,7,Oversize,oversize,
+shopping100k,fit,fit,8,Regular,regular,
+shopping100k,fit,fit,9,Skinny,tight,
+shopping100k,fit,fit,10,Slim,tight,
+shopping100k,fit,fit,11,Small,tight,
+shopping100k,fit,fit,12,Straight,OUT,trouser-specific value
+shopping100k,fit,fit,13,Tailered,regular,
+shopping100k,fit,fit,14,Tapered,OUT,trouser-specific value
+shopping100k,sleeve,sleevelen,0,3/4,three_quarter,
+shopping100k,sleeve,sleevelen,1,Spaghetti,sleeveless,
+shopping100k,sleeve,sleevelen,2,Sleeveless,sleeveless,
+shopping100k,sleeve,sleevelen,3,Elbow,short,
+shopping100k,sleeve,sleevelen,4,Extra Long,long,
+shopping100k,sleeve,sleevelen,5,Extra Short,short,
+shopping100k,sleeve,sleevelen,6,Long,long,
+shopping100k,sleeve,sleevelen,7,Short,short,
+shopping100k,sleeve,sleevelen,8,Strapless,sleeveless,
+shopping100k,neckline,collar,0,Buttondown,shirt_collar,collar takes priority
+shopping100k,neckline,collar,1,Cutaway,shirt_collar,collar takes priority
+shopping100k,neckline,collar,2,High,mandarin,collar takes priority
+shopping100k,neckline,collar,3,Hood,hooded,collar takes priority
+shopping100k,neckline,collar,4,Kent,shirt_collar,collar takes priority
+shopping100k,neckline,collar,5,Lapel,other,collar takes priority
+shopping100k,neckline,collar,6,Lined,other,collar takes priority
+shopping100k,neckline,collar,7,Mandarin,mandarin,collar takes priority
+shopping100k,neckline,collar,8,Polo,polo,collar takes priority
+shopping100k,neckline,collar,9,Round,round,collar takes priority
+shopping100k,neckline,collar,10,Shawl,other,collar takes priority
+shopping100k,neckline,collar,11,Turndown,shirt_collar,collar takes priority
+shopping100k,neckline,collar,12,V-neck,v_neck,collar takes priority
+shopping100k,neckline,collar,13,Peter Pan,other,collar takes priority
+shopping100k,neckline,collar,14,Volant,other,collar takes priority
+shopping100k,neckline,collar,15,Shirt,shirt_collar,collar takes priority
+shopping100k,neckline,collar,16,Chin,other,collar takes priority
+shopping100k,neckline,neckline,0,Boat,boat,used when collar is missing
+shopping100k,neckline,neckline,1,Backless,other,used when collar is missing
+shopping100k,neckline,neckline,2,Cache-coeur,other,used when collar is missing
+shopping100k,neckline,neckline,3,Henley,other,used when collar is missing
+shopping100k,neckline,neckline,4,Low v-neck,v_neck,used when collar is missing
+shopping100k,neckline,neckline,5,Low round,round,used when collar is missing
+shopping100k,neckline,neckline,6,Off-the-shoulder,off_shoulder,used when collar is missing
+shopping100k,neckline,neckline,7,Round,round,used when collar is missing
+shopping100k,neckline,neckline,8,Square,square,used when collar is missing
+shopping100k,neckline,neckline,9,V-neck,v_neck,used when collar is missing
+shopping100k,neckline,neckline,10,Envelope,other,used when collar is missing
+shopping100k,closure,fastening,0,Zip,zip,
+shopping100k,closure,fastening,1,Back closure,other,
+shopping100k,closure,fastening,2,Belt,other,
+shopping100k,closure,fastening,3,Button,button,
+shopping100k,closure,fastening,4,Covered,other,
+shopping100k,closure,fastening,5,Hook,other,
+shopping100k,closure,fastening,6,Laces,other,
+shopping100k,closure,fastening,7,No closure,none,
+shopping100k,closure,fastening,8,Front,other,
+shopping100k,closure,fastening,9,Others,other,
+shopping100k,length,length,-1,(attribute does not exist),OUT,Shopping100k has NO length attribute; length axis relies on manual labels
