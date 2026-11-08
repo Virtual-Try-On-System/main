@@ -20,9 +20,11 @@ mlruns/
 *.ckpt
 *.safetensors
 *.onnx
+*.task
 
 # Project PDFs contain student numbers
 documents/
+*.pdf
 
 # Secrets
 .env
