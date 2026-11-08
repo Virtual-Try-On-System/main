@@ -4,7 +4,7 @@ from pathlib import Path
 import pytest
 
 ROOT = Path(__file__).resolve().parent.parent
-PACKAGES = ["garment", "body", "fit", "training", "service", "evaluation"]
+PACKAGES = ["garment", "body", "fit", "training", "service", "evaluation", "schemas"]
 
 
 @pytest.mark.parametrize("package", PACKAGES)

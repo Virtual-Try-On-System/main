@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "category": "tshirt",
+  "fit_class": "regular",
+  "size_label": "M",
+  "mask_path": "/home/me/mask.png",
+  "ratios": {
+    "length_to_chest_width": 1.3,
+    "sleeve_to_length": 0.28,
+    "shoulder_to_chest_width": 0.9
+  }
+}

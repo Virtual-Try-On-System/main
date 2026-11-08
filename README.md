@@ -18,6 +18,7 @@ The module folders are still empty and get filled as the tasks are completed.
 | `training/` | Training scripts and the cloud training environment, see [docs/cloud-training.md](docs/cloud-training.md) |
 | `service/` | FastAPI service and the model interface |
 | `evaluation/` | Metrics and comparison scripts |
+| `schemas/` | JSON contracts between modules, with valid and invalid examples |
 | `docs/` | Project documentation |
 | `tests/` | Automated tests |
 | `pyproject.toml`, `uv.lock` | Dependencies and their pinned versions |

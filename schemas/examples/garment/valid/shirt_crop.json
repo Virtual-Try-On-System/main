@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "category": "shirt",
+  "fit_class": "crop",
+  "size_label": "S",
+  "mask_path": "masks/garment_001.png",
+  "ratios": {
+    "length_to_chest_width": 0.8,
+    "sleeve_to_length": 0.28,
+    "shoulder_to_chest_width": 0.9
+  }
+}
