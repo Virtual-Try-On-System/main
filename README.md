@@ -17,7 +17,7 @@ The module folders are still empty and get filled as the tasks are completed.
 | `fit/` | Fit engine: compares garment and body, produces the target mask |
 | `training/` | Training scripts and the cloud training environment, see [docs/cloud-training.md](docs/cloud-training.md) |
 | `service/` | FastAPI service and the model interface |
-| `evaluation/` | Metrics and comparison scripts |
+| `evaluation/` | Metrics and comparison scripts (see `docs/evaluation.md`) |
 | `schemas/` | JSON contracts between modules, with valid and invalid examples |
 | `docs/` | Project documentation |
 | `tests/` | Automated tests |
