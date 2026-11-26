@@ -14,10 +14,23 @@ from body.landmarks import (
     PoseLandmarkIndex,
 )
 
-MODEL_URL = (
-    "https://storage.googleapis.com/mediapipe-models/pose_landmarker/"
-    "pose_landmarker_lite/float16/latest/pose_landmarker_lite.task"
-)
+TASK_MODEL_VARIANTS: dict[int, tuple[str, str]] = {
+    0: (
+        "pose_landmarker_lite.task",
+        "https://storage.googleapis.com/mediapipe-models/pose_landmarker/"
+        "pose_landmarker_lite/float16/latest/pose_landmarker_lite.task",
+    ),
+    1: (
+        "pose_landmarker_full.task",
+        "https://storage.googleapis.com/mediapipe-models/pose_landmarker/"
+        "pose_landmarker_full/float16/latest/pose_landmarker_full.task",
+    ),
+    2: (
+        "pose_landmarker_heavy.task",
+        "https://storage.googleapis.com/mediapipe-models/pose_landmarker/"
+        "pose_landmarker_heavy/float16/latest/pose_landmarker_heavy.task",
+    ),
+}
 
 
 class PoseDetector:
@@ -27,11 +40,13 @@ class PoseDetector:
         min_tracking_confidence: float = 0.6,
         model_complexity: int = 1,
         enable_segmentation: bool = True,
+        static_image_mode: bool = False,
     ) -> None:
         self.min_detection_confidence = min_detection_confidence
         self.min_tracking_confidence = min_tracking_confidence
         self.model_complexity = model_complexity
         self.enable_segmentation = enable_segmentation
+        self.static_image_mode = static_image_mode
 
         self._use_solutions_api = False
         self._pose_solutions = None
@@ -50,9 +65,9 @@ class PoseDetector:
         if hasattr(mp, "solutions") and hasattr(mp.solutions, "pose"):
             self._use_solutions_api = True
             self._pose_solutions = mp.solutions.pose.Pose(
-                static_image_mode=False,
+                static_image_mode=self.static_image_mode,
                 model_complexity=self.model_complexity,
-                smooth_landmarks=True,
+                smooth_landmarks=not self.static_image_mode,
                 enable_segmentation=self.enable_segmentation,
                 min_detection_confidence=self.min_detection_confidence,
                 min_tracking_confidence=self.min_tracking_confidence,
@@ -63,9 +78,14 @@ class PoseDetector:
 
             model_path = self._ensure_task_model()
             base_options = mp_python.BaseOptions(model_asset_path=str(model_path))
+            running_mode = (
+                mp_vision.RunningMode.IMAGE
+                if self.static_image_mode
+                else mp_vision.RunningMode.VIDEO
+            )
             options = mp_vision.PoseLandmarkerOptions(
                 base_options=base_options,
-                running_mode=mp_vision.RunningMode.VIDEO,
+                running_mode=running_mode,
                 num_poses=1,
                 min_pose_detection_confidence=self.min_detection_confidence,
                 min_pose_presence_confidence=self.min_detection_confidence,
@@ -77,11 +97,23 @@ class PoseDetector:
     def _ensure_task_model(self) -> Path:
         checkpoints_dir = Path(__file__).resolve().parent.parent / "checkpoints"
         checkpoints_dir.mkdir(parents=True, exist_ok=True)
-        model_path = checkpoints_dir / "pose_landmarker_lite.task"
-        if not model_path.exists():
-            print(f"[INFO] Downloading MediaPipe Pose model to {model_path}...")
-            urllib.request.urlretrieve(MODEL_URL, str(model_path))
-        return model_path
+        complexity_key = min(2, max(0, int(self.model_complexity)))
+        filename, url = TASK_MODEL_VARIANTS[complexity_key]
+        model_path = checkpoints_dir / filename
+        if model_path.exists():
+            return model_path
+
+        try:
+            print(f"[INFO] Downloading MediaPipe Pose model ({filename}) to {model_path}...")
+            urllib.request.urlretrieve(url, str(model_path))
+            return model_path
+        except Exception:
+            # Offline fallback: use any cached pose_landmarker_*.task if available
+            for fallback_name, _ in TASK_MODEL_VARIANTS.values():
+                candidate = checkpoints_dir / fallback_name
+                if candidate.exists():
+                    return candidate
+            raise
 
     def detect(self, frame_bgr: np.ndarray) -> dict[int, LandmarkPoint] | None:
         h, w = frame_bgr.shape[:2]
@@ -95,28 +127,33 @@ class PoseDetector:
             if results.pose_landmarks:
                 raw_landmarks = results.pose_landmarks.landmark
             if results.segmentation_mask is not None:
-                self.last_segmentation_mask = (
-                    (results.segmentation_mask > 0.5).astype(np.uint8) * 255
-                )
+                mask_u8 = (results.segmentation_mask > 0.5).astype(np.uint8) * 255
+                if mask_u8.shape[:2] != (h, w):
+                    mask_u8 = cv2.resize(mask_u8, (w, h), interpolation=cv2.INTER_NEAREST)
+                self.last_segmentation_mask = mask_u8
         elif self._pose_landmarker is not None:
             mp_image = self._mp.Image(
                 image_format=self._mp.ImageFormat.SRGB,
                 data=frame_rgb,
             )
-            now_ms = int(time.perf_counter() * 1000)
-            self._last_timestamp_ms = max(self._last_timestamp_ms + 1, now_ms)
-            result = self._pose_landmarker.detect_for_video(
-                mp_image, self._last_timestamp_ms
-            )
+            if self.static_image_mode:
+                result = self._pose_landmarker.detect(mp_image)
+            else:
+                now_ms = int(time.perf_counter() * 1000)
+                self._last_timestamp_ms = max(self._last_timestamp_ms + 1, now_ms)
+                result = self._pose_landmarker.detect_for_video(
+                    mp_image, self._last_timestamp_ms
+                )
             if result.pose_landmarks and len(result.pose_landmarks) > 0:
                 raw_landmarks = result.pose_landmarks[0]
             if result.segmentation_masks and len(result.segmentation_masks) > 0:
                 mask_view = result.segmentation_masks[0].numpy_view()
                 if mask_view.ndim == 3:
                     mask_view = mask_view[:, :, 0]
-                self.last_segmentation_mask = (
-                    (mask_view > 0.5).astype(np.uint8) * 255
-                )
+                mask_u8 = (mask_view > 0.5).astype(np.uint8) * 255
+                if mask_u8.shape[:2] != (h, w):
+                    mask_u8 = cv2.resize(mask_u8, (w, h), interpolation=cv2.INTER_NEAREST)
+                self.last_segmentation_mask = mask_u8
 
         if not raw_landmarks:
             return None
@@ -128,7 +165,8 @@ class PoseDetector:
             except ValueError:
                 name = f"LANDMARK_{idx}"
 
-            visibility = float(getattr(lm, "visibility", 1.0) or 0.0)
+            raw_vis = getattr(lm, "visibility", None)
+            visibility = float(raw_vis) if raw_vis is not None else 1.0
             px = int(round(lm.x * w))
             py = int(round(lm.y * h))
             landmarks[idx] = LandmarkPoint(

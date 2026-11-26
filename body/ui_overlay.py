@@ -264,7 +264,7 @@ class UIOverlay:
         self, frame: np.ndarray, evaluation: PoseEvaluationResult
     ) -> None:
         h, _ = frame.shape[:2]
-        panel_w = 390
+        panel_w = 435
         row_h = 30
         panel_h = 40 + len(evaluation.rules) * row_h
         x1 = 16
@@ -328,8 +328,12 @@ class UIOverlay:
         is_valid: bool,
     ) -> None:
         h, w = frame.shape[:2]
+        ref_h = m.reference_height_cm or 175.0
+        ref_w = m.reference_weight_kg or 70.0
+        scale_str = f"{m.cm_per_pixel:.4f} cm/px" if m.cm_per_pixel else "-"
         lines = [
-            f"Ref Height: {m.reference_height_cm or 175.0:.0f} cm ([+/-] adjust)",
+            f"Ref H/W:    {ref_h:.0f} cm / {ref_w:.0f} kg ([+/-] H)",
+            f"Scale:      {scale_str} ({m.full_body_px:.0f} px)",
             f"Shoulder:   {m.shoulder_width_cm or 0:.1f} cm ({m.shoulder_width_px:.0f} px)",
             f"Torso/Leg:  {m.torso_length_cm or 0:.1f} / {m.leg_length_cm or 0:.1f} cm",
         ]
@@ -346,7 +350,7 @@ class UIOverlay:
         lower_sz = m.estimated_lower_size or "-"
         lines.append(f"Est. Size:  Upper [{upper_sz}] | Lower [{lower_sz}]")
 
-        panel_w = 325
+        panel_w = 340
         row_h = 25
         panel_h = 38 + len(lines) * row_h
         x2 = w - 16
