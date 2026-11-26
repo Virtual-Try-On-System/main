@@ -16,7 +16,10 @@ ENV UV_LINK_MODE=copy \
 WORKDIR /app
 
 COPY pyproject.toml uv.lock .python-version README.md ./
-RUN uv sync --frozen --no-dev --extra cu130
+# The cache keeps downloaded packages between builds, so a dependency change does not download
+# the multi-GB CUDA packages again.
+RUN --mount=type=cache,target=/root/.cache/uv \
+    uv sync --frozen --no-dev --extra cu130
 
 COPY training ./training
 

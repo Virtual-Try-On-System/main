@@ -17,6 +17,8 @@ class TrainingState:
     model: dict[str, Any]
     optimizer: dict[str, Any]
     rng: dict[str, Any]
+    tracking_run_id: str | None = None
+    """MLflow run of this training, so a resumed run continues the same record."""
 
 
 def capture_rng() -> dict[str, Any]:
