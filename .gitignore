@@ -15,7 +15,9 @@ outputs/
 checkpoints/
 mlruns/
 
-# Model weights
+# Model weights and third-party model code (see docs/reference-model.md)
+weights/
+external/
 *.pt
 *.pth
 *.ckpt
