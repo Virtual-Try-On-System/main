@@ -41,3 +41,6 @@ __pycache__/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Temporary git worktrees made by Claude Code agents
+.claude/worktrees/
