@@ -15,7 +15,7 @@ The module folders are still empty and get filled as the tasks are completed.
 | `garment/` | Garment analysis: category, fit class, mask and ratio vector |
 | `body/` | Body analysis: pose, cm/pixel scale and body measurements |
 | `fit/` | Fit engine: compares garment and body, produces the target mask |
-| `training/` | Training scripts and the cloud training environment, see [docs/cloud-training.md](docs/cloud-training.md) |
+| `training/` | Training scripts and the cloud training environment, see [docs/cloud-training.md](docs/cloud-training.md) and [docs/experiment-tracking.md](docs/experiment-tracking.md) |
 | `service/` | FastAPI service and the model interface |
 | `evaluation/` | Metrics and comparison scripts (see `docs/evaluation.md`) |
 | `schemas/` | JSON contracts between modules, with valid and invalid examples |
