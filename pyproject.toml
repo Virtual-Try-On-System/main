@@ -5,8 +5,15 @@ description = "Anthropometric data-supported virtual try-on system"
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
 dependencies = [
+    "alembic>=1.20.1",
+    "lpips>=0.1.4",
+    "mlflow-skinny>=3.18.0",
     "pillow>=13.0.0",
     "pydantic>=2.14.3",
+    "scikit-image>=0.26.0",
+    "sqlalchemy>=2.1.9",
+    "torch-fidelity>=0.4.0",
+    "torchmetrics>=1.9.0",
 ]
 
 [project.optional-dependencies]
@@ -36,7 +43,10 @@ explicit = true
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
-addopts = "-ra"
+addopts = "-ra -m \"not real_weights\""
+markers = [
+    "real_weights: needs pretrained LPIPS/Inception weights (network on first use); skipped by default",
+]
 
 [tool.ruff]
 line-length = 100

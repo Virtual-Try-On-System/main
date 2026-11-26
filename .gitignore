@@ -10,6 +10,7 @@
 
 # Data and run outputs
 data/
+!training/data/
 outputs/
 checkpoints/
 mlruns/
@@ -43,3 +44,6 @@ __pycache__/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Temporary git worktrees made by Claude Code agents
+.claude/worktrees/

@@ -14,6 +14,8 @@ Provider choice and prices are in [cloud-costs.md](cloud-costs.md).
 | Checkpoint save and resume | `training/checkpoint.py` |
 | Cloud storage sync with an upload allow list | `training/sync.py` |
 | One command for a GPU machine | `training/run_on_gpu_host.sh` |
+| Experiment tracking with MLflow, see [experiment-tracking.md](experiment-tracking.md) | `training/tracking.py` |
+| VITON-HD data loader, split files, data check | `training/data/` (see `docs/data-card.md`) |
 
 ## How interruptions are handled
 
@@ -61,7 +63,7 @@ Look for `Resumed from step N` in the output after a restart.
 
 - [ ] Choose the provider and open the account
 - [ ] Get GPU quota
-- [ ] Build the training image for the first time and confirm it sees the GPU
+- [x] Build the training image for the first time and confirm it sees the GPU (local RTX 3070)
 - [ ] Confirm a real rclone transfer to cloud storage
 - [ ] Run the trial on a cloud machine and interrupt it
 - [ ] Check the VITON-HD and DressCode licenses for cloud upload
