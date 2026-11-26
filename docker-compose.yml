@@ -3,6 +3,18 @@ services:
     build: .
     image: vton-test
 
+  api:
+    profiles: [service]
+    build: .
+    image: vton-api
+    command: ["uv", "run", "uvicorn", "service.app:create_app", "--factory",
+              "--host", "0.0.0.0", "--port", "8000"]
+    env_file:
+      - path: .env
+        required: false
+    ports:
+      - "127.0.0.1:8000:8000"
+
   train:
     profiles: [training]
     build:

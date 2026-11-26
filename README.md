@@ -5,8 +5,9 @@ crop top looks long and an oversized sweatshirt looks tight. This project combin
 analysis, body analysis and a fit engine to show where a garment actually ends on the user's
 body, in centimeters.
 
-The project is at an early stage. The repository skeleton, tests, Docker setup and CI are ready.
-The module folders are still empty and get filled as the tasks are completed.
+The project is at an early stage. The repository skeleton, tests, Docker setup, CI, the JSON
+schemas and the service skeleton with a fake model are ready. The other module folders are still
+empty and get filled as the tasks are completed.
 
 ## What is where
 
@@ -16,7 +17,7 @@ The module folders are still empty and get filled as the tasks are completed.
 | `body/` | Body analysis: pose, cm/pixel scale and body measurements |
 | `fit/` | Fit engine: compares garment and body, produces the target mask |
 | `training/` | Training scripts and the cloud training environment, see [docs/cloud-training.md](docs/cloud-training.md) |
-| `service/` | FastAPI service and the model interface |
+| `service/` | FastAPI service and the model interface, see [docs/service.md](docs/service.md) |
 | `evaluation/` | Metrics and comparison scripts |
 | `schemas/` | JSON contracts between modules, with valid and invalid examples |
 | `docs/` | Project documentation |
@@ -81,6 +82,7 @@ uv sync --extra cpu
 | Check code style | `uv run ruff check .` |
 | Fix import order and simple style issues | `uv run ruff check . --fix` |
 | Run a Python file | `uv run python path/to/file.py` |
+| Start the try-on service | `uv run uvicorn service.app:create_app --factory` |
 | Add a dependency | `uv add <package>` |
 | Update after pulling changes | `uv sync --extra cpu` |
 
