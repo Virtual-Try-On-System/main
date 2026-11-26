@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "image_id": "shopping100k/Male/5_T_shirts/0000001_1.jpg",
+  "domain": "flat",
+  "category": { "label": "tshirt", "confidence": 0.97 },
+  "cut": [
+    { "axis": "length", "label": "regular", "confidence": 0.91, "ordinal": true, "low_confidence": false },
+    { "axis": "fit", "label": "regular", "confidence": 0.88, "ordinal": true, "low_confidence": false },
+    { "axis": "neckline", "label": "round", "confidence": 0.9, "ordinal": false, "low_confidence": false }
+  ],
+  "mask": { "format": "polygon", "data": "120,80, 260,80, 300,160, 340,420, 80,420, 90,160", "source": "model" },
+  "ratios": { "length_to_chest_width": 1.42, "sleeve_to_chest_width": 0.51, "shoulder_to_chest_width": 0.96, "valid": true },
+  "size_label": "unknown",
+  "low_confidence": false,
+  "runtime_ms": 183.4
+}

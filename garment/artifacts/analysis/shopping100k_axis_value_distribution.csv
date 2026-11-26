@@ -1,0 +1,181 @@
+﻿axis,category_id,category_name,source_value,image_count
+fit,3,Shirt,Regular,9439
+fit,3,Shirt,Large,2090
+fit,3,Shirt,Slim,1716
+fit,3,Shirt,Tailered,682
+fit,3,Shirt,Small,485
+fit,3,Shirt,UNLABELED(-1),283
+fit,3,Shirt,Oversize,92
+fit,3,Shirt,Loose,38
+fit,3,Shirt,Skinny,10
+fit,3,Shirt,Flared,6
+fit,3,Shirt,Straight,5
+fit,3,Shirt,Tapered,3
+fit,3,Shirt,High waist,3
+fit,3,Shirt,Low,1
+fit,4,T-shirt,Regular,15618
+fit,4,T-shirt,Tailered,1976
+fit,4,T-shirt,Large,1845
+fit,4,T-shirt,Small,1698
+fit,4,T-shirt,UNLABELED(-1),469
+fit,4,T-shirt,Slim,252
+fit,4,T-shirt,Oversize,140
+fit,4,T-shirt,Loose,41
+fit,4,T-shirt,Skinny,9
+fit,4,T-shirt,Tapered,8
+fit,4,T-shirt,Straight,6
+fit,4,T-shirt,High waist,4
+fit,4,T-shirt,Flared,2
+fit,4,T-shirt,Low,2
+fit,4,T-shirt,Bootcut,1
+fit,5,Jumper,Regular,9395
+fit,5,Jumper,Large,1113
+fit,5,Jumper,Small,485
+fit,5,Jumper,Oversize,250
+fit,5,Jumper,Tailered,243
+fit,5,Jumper,UNLABELED(-1),212
+fit,5,Jumper,Slim,58
+fit,5,Jumper,Loose,16
+fit,5,Jumper,Tapered,10
+fit,5,Jumper,Skinny,8
+fit,5,Jumper,Straight,7
+sleeve,3,Shirt,Long,5918
+sleeve,3,Shirt,Short,4676
+sleeve,3,Shirt,Sleeveless,1153
+sleeve,3,Shirt,3/4,1086
+sleeve,3,Shirt,Extra Short,595
+sleeve,3,Shirt,Elbow,564
+sleeve,3,Shirt,Extra Long,545
+sleeve,3,Shirt,UNLABELED(-1),211
+sleeve,3,Shirt,Spaghetti,81
+sleeve,3,Shirt,Strapless,24
+sleeve,4,T-shirt,Short,11976
+sleeve,4,T-shirt,Sleeveless,3028
+sleeve,4,T-shirt,Long,2273
+sleeve,4,T-shirt,Extra Short,1503
+sleeve,4,T-shirt,Spaghetti,862
+sleeve,4,T-shirt,Elbow,823
+sleeve,4,T-shirt,3/4,821
+sleeve,4,T-shirt,UNLABELED(-1),388
+sleeve,4,T-shirt,Extra Long,361
+sleeve,4,T-shirt,Strapless,36
+sleeve,5,Jumper,Long,9374
+sleeve,5,Jumper,Extra Long,1421
+sleeve,5,Jumper,3/4,667
+sleeve,5,Jumper,UNLABELED(-1),155
+sleeve,5,Jumper,Short,64
+sleeve,5,Jumper,Elbow,64
+sleeve,5,Jumper,Sleeveless,32
+sleeve,5,Jumper,Extra Short,18
+sleeve,5,Jumper,Strapless,1
+sleeve,5,Jumper,Spaghetti,1
+collar,3,Shirt,UNLABELED(-1),6246
+collar,3,Shirt,Polo,2394
+collar,3,Shirt,Kent,1756
+collar,3,Shirt,Shirt,1264
+collar,3,Shirt,Buttondown,1194
+collar,3,Shirt,Mandarin,1131
+collar,3,Shirt,Cutaway,321
+collar,3,Shirt,Turndown,242
+collar,3,Shirt,Lapel,105
+collar,3,Shirt,Shawl,75
+collar,3,Shirt,Volant,34
+collar,3,Shirt,Peter Pan,33
+collar,3,Shirt,Hood,29
+collar,3,Shirt,Chin,12
+collar,3,Shirt,Round,7
+collar,3,Shirt,V-neck,5
+collar,3,Shirt,High,4
+collar,3,Shirt,Lined,1
+collar,4,T-shirt,UNLABELED(-1),20752
+collar,4,T-shirt,Mandarin,654
+collar,4,T-shirt,Round,169
+collar,4,T-shirt,Hood,157
+collar,4,T-shirt,Shawl,89
+collar,4,T-shirt,Polo,80
+collar,4,T-shirt,V-neck,49
+collar,4,T-shirt,Turndown,44
+collar,4,T-shirt,Volant,23
+collar,4,T-shirt,Shirt,14
+collar,4,T-shirt,Peter Pan,11
+collar,4,T-shirt,Lapel,10
+collar,4,T-shirt,High,6
+collar,4,T-shirt,Chin,5
+collar,4,T-shirt,Kent,3
+collar,4,T-shirt,Lined,2
+collar,4,T-shirt,Buttondown,2
+collar,4,T-shirt,Cutaway,1
+collar,5,Jumper,UNLABELED(-1),7556
+collar,5,Jumper,Hood,2677
+collar,5,Jumper,Mandarin,852
+collar,5,Jumper,Shawl,254
+collar,5,Jumper,Polo,186
+collar,5,Jumper,High,95
+collar,5,Jumper,Turndown,69
+collar,5,Jumper,Lapel,47
+collar,5,Jumper,Round,22
+collar,5,Jumper,V-neck,21
+collar,5,Jumper,Shirt,7
+collar,5,Jumper,Peter Pan,5
+collar,5,Jumper,Buttondown,3
+collar,5,Jumper,Lined,2
+collar,5,Jumper,Chin,1
+neckline,3,Shirt,UNLABELED(-1),8574
+neckline,3,Shirt,Square,3455
+neckline,3,Shirt,Low round,980
+neckline,3,Shirt,Round,526
+neckline,3,Shirt,Envelope,405
+neckline,3,Shirt,Off-the-shoulder,290
+neckline,3,Shirt,Low v-neck,269
+neckline,3,Shirt,Backless,123
+neckline,3,Shirt,Cache-coeur,114
+neckline,3,Shirt,V-neck,64
+neckline,3,Shirt,Boat,47
+neckline,3,Shirt,Henley,6
+neckline,4,T-shirt,Square,14936
+neckline,4,T-shirt,Off-the-shoulder,1717
+neckline,4,T-shirt,UNLABELED(-1),1606
+neckline,4,T-shirt,Low round,1487
+neckline,4,T-shirt,Envelope,655
+neckline,4,T-shirt,Low v-neck,489
+neckline,4,T-shirt,Backless,376
+neckline,4,T-shirt,Round,285
+neckline,4,T-shirt,Boat,202
+neckline,4,T-shirt,Cache-coeur,159
+neckline,4,T-shirt,V-neck,81
+neckline,4,T-shirt,Henley,78
+neckline,5,Jumper,Square,5433
+neckline,5,Jumper,UNLABELED(-1),5094
+neckline,5,Jumper,Low round,496
+neckline,5,Jumper,Envelope,313
+neckline,5,Jumper,Boat,154
+neckline,5,Jumper,Backless,76
+neckline,5,Jumper,Round,63
+neckline,5,Jumper,Low v-neck,53
+neckline,5,Jumper,Off-the-shoulder,52
+neckline,5,Jumper,Cache-coeur,28
+neckline,5,Jumper,Henley,27
+neckline,5,Jumper,V-neck,8
+fastening,3,Shirt,UNLABELED(-1),7741
+fastening,3,Shirt,Button,6659
+fastening,3,Shirt,Zip,394
+fastening,3,Shirt,Covered,46
+fastening,3,Shirt,Back closure,5
+fastening,3,Shirt,Others,4
+fastening,3,Shirt,Belt,3
+fastening,3,Shirt,Hook,1
+fastening,4,T-shirt,UNLABELED(-1),21376
+fastening,4,T-shirt,Button,439
+fastening,4,T-shirt,Zip,183
+fastening,4,T-shirt,Covered,57
+fastening,4,T-shirt,Others,11
+fastening,4,T-shirt,Back closure,3
+fastening,4,T-shirt,Hook,2
+fastening,5,Jumper,UNLABELED(-1),9219
+fastening,5,Jumper,Zip,1822
+fastening,5,Jumper,Button,591
+fastening,5,Jumper,Covered,48
+fastening,5,Jumper,Hook,41
+fastening,5,Jumper,Belt,34
+fastening,5,Jumper,Laces,31
+fastening,5,Jumper,Others,11

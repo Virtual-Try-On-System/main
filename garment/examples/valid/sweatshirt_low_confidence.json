@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "image_id": "shopping100k/Female/6_Jumpers/0000456_2.jpg",
+  "domain": "flat",
+  "category": { "label": "sweatshirt", "confidence": 0.81 },
+  "cut": [
+    { "axis": "length", "label": "regular", "confidence": 0.77, "ordinal": true, "low_confidence": false },
+    { "axis": "fit", "label": "oversize", "confidence": 0.52, "ordinal": true, "low_confidence": true },
+    { "axis": "sleeve", "label": "long", "confidence": 0.94, "ordinal": true, "low_confidence": false },
+    { "axis": "neckline", "label": "hooded", "confidence": 0.96, "ordinal": false, "low_confidence": false }
+  ],
+  "mask": { "format": "png_path", "data": "masks/s100k_Female_6_Jumpers_0000456_2.png", "source": "model" },
+  "ratios": { "length_to_chest_width": 1.18, "sleeve_to_chest_width": 1.31, "shoulder_to_chest_width": 1.12, "valid": true },
+  "size_label": "unknown",
+  "low_confidence": true,
+  "runtime_ms": 205.1
+}

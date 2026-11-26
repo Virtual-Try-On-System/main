@@ -1,0 +1,90 @@
+{
+  "version": "1.0",
+  "description": "Upper-body garment category and cut taxonomy. length/fit/sleeve are ordinal axes; neckline/closure are nominal. Class lists and their order must match garment/descriptor.py AXIS_LABELS (checked by tests).",
+  "categories": [
+    {
+      "label": "tshirt",
+      "definition": "Light/medium upper garment; short, long or sleeveless. Includes t-shirts, polo t-shirts, tank tops, camisoles.",
+      "source": "Fashionpedia 'top, t-shirt, sweatshirt' (EXCLUDING nickname=hoodie) + Shopping100k T-shirt(4)"
+    },
+    {
+      "label": "sweatshirt",
+      "definition": "Thick upper garment, hooded (hoodie) or not, usually with ribbed cuffs. Sweaters/cardigans are NOT included; Shopping100k Jumper also contains knitwear, so labels from that source are noisy.",
+      "source": "Fashionpedia 'top, t-shirt, sweatshirt' with nickname=hoodie(16) + Shopping100k Jumper(5) (noisy)"
+    },
+    {
+      "label": "shirt",
+      "definition": "Buttoned, collared woven upper garment (shirt, blouse).",
+      "source": "Fashionpedia 'shirt, blouse'(0) + Shopping100k Shirt(3)"
+    }
+  ],
+  "out_of_scope_categories": "sweater, cardigan, jacket, coat, vest, dress, pants and all other categories are OUT (see mapping_categories.csv).",
+  "axes": {
+    "length": {
+      "ordinal": true,
+      "definition": "Vertical garment length (not sleeve length). From Fashionpedia length attributes on-model; manual labels on flat-lay.",
+      "classes": [
+        { "label": "crop", "order": 0, "definition": "Above the waist; exposes the midriff. Fashionpedia nickname 'crop (top)' or micro/mini length." },
+        { "label": "short", "order": 1, "definition": "Above the hip; ends below the waist but above the hip." },
+        { "label": "regular", "order": 2, "definition": "Hip length. Standard t-shirt/shirt length." },
+        { "label": "long", "order": 3, "definition": "Below the hip and longer (tunic, above/below-the-knee, midi, maxi, floor)." }
+      ]
+    },
+    "fit": {
+      "ordinal": true,
+      "definition": "How closely the garment fits the body. Ordered axis: distance between tight and oversize matters; within-one-class accuracy is used in evaluation.",
+      "classes": [
+        { "label": "tight", "order": 0, "definition": "Body-hugging (skinny, slim, small, tight/curved fit)." },
+        { "label": "regular", "order": 1, "definition": "Standard cut (regular, tailored)." },
+        { "label": "loose", "order": 2, "definition": "Loose but not oversized (large, loose)." },
+        { "label": "oversize", "order": 3, "definition": "Deliberately large/baggy cut (oversized)." }
+      ]
+    },
+    "sleeve": {
+      "ordinal": true,
+      "definition": "Sleeve length. Main label source is Shopping100k sleevelen; sleeve-length labels effectively do not exist on Fashionpedia upper-garment masks (0.1%).",
+      "classes": [
+        { "label": "sleeveless", "order": 0, "definition": "No sleeves; spaghetti straps and strapless included." },
+        { "label": "short", "order": 1, "definition": "Upper arm; elbow-length included. Extra short + short + elbow." },
+        { "label": "three_quarter", "order": 2, "definition": "Below the elbow, above the wrist (3/4)." },
+        { "label": "long", "order": 3, "definition": "Wrist length and longer (long, extra long, wrist-length)." }
+      ]
+    },
+    "neckline": {
+      "ordinal": false,
+      "definition": "Neckline/collar type (nominal, auxiliary axis). From Shopping100k collar+neckline and Fashionpedia neckline part masks. Retailer labels are noisy; within-one-class tolerance does not apply.",
+      "classes": [
+        { "label": "round", "definition": "Crew/round/scoop/u-neck/oval/low round." },
+        { "label": "v_neck", "definition": "V neck and low v-neck." },
+        { "label": "polo", "definition": "Polo collar." },
+        { "label": "shirt_collar", "definition": "Shirt collar (shirt, buttondown, kent, turndown, cutaway)." },
+        { "label": "hooded", "definition": "Hooded." },
+        { "label": "mandarin", "definition": "Mandarin/stand collar (mandarin, banded, high collar)." },
+        { "label": "boat", "definition": "Boat neck." },
+        { "label": "square", "definition": "Square neck." },
+        { "label": "off_shoulder", "definition": "Off-the-shoulder / one shoulder." },
+        { "label": "collarless", "definition": "Collarless." },
+        { "label": "other", "definition": "All other neckline types." }
+      ]
+    },
+    "closure": {
+      "ordinal": false,
+      "definition": "Front opening/closure type (nominal, auxiliary axis).",
+      "classes": [
+        { "label": "button", "definition": "Buttoned (single/double breasted, button)." },
+        { "label": "zip", "definition": "Zip-up." },
+        { "label": "none", "definition": "No opening (no opening, no closure)." },
+        { "label": "other", "definition": "Other closure types (lace up, wrapping, hook, belt...)." }
+      ]
+    }
+  },
+  "confidence_threshold": {
+    "default": 0.6,
+    "note": "Initial threshold for the low-confidence flag; calibrated on the validation split (Goal 9). Never tuned on the test split."
+  },
+  "source_notes": {
+    "fashionpedia": "length and fit from the main garment mask; neckline joined image-level from neckline part masks only on single-upper-garment images; sleeve labels unused (effectively absent).",
+    "shopping100k": "category/fit/sleevelen/collar/neckline/fastening directly; NO length attribute -> length axis relies on manual labels in the flat golden pool.",
+    "missing_labels": "-1 or unmappable value = no label; missing-label loss masking is applied during training."
+  }
+}

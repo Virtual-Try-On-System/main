@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "image_id": "fashionpedia/train/00a1b2c3d4e5f6.jpg#ann12345",
+  "domain": "on_model",
+  "category": { "label": "shirt", "confidence": 0.93 },
+  "cut": [
+    { "axis": "length", "label": "regular", "confidence": 0.86, "ordinal": true, "low_confidence": false },
+    { "axis": "fit", "label": "tight", "confidence": 0.74, "ordinal": true, "low_confidence": false },
+    { "axis": "sleeve", "label": "long", "confidence": 0.9, "ordinal": true, "low_confidence": false },
+    { "axis": "neckline", "label": "shirt_collar", "confidence": 0.89, "ordinal": false, "low_confidence": false },
+    { "axis": "closure", "label": "button", "confidence": 0.92, "ordinal": false, "low_confidence": false }
+  ],
+  "mask": { "format": "rle", "data": "274 12 3 40 5 38 8 35 12 30 15 26 20 20 25 14 30 8 36 2 39", "source": "dataset" },
+  "ratios": { "length_to_chest_width": null, "sleeve_to_chest_width": null, "shoulder_to_chest_width": null, "valid": false },
+  "size_label": "M",
+  "low_confidence": false,
+  "runtime_ms": 241.7
+}

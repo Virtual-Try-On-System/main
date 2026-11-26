@@ -1,0 +1,40 @@
+# Garment training configuration (fixed seed)
+seed: 42
+
+data:
+  root: data                      # override with VTON_DATA_DIR when running locally
+  splits:
+    train: garment/artifacts/train.csv
+    val: garment/artifacts/val.csv
+    test: garment/artifacts/test.csv
+    val_flat: garment/artifacts/val_flat.csv
+    test_flat: garment/artifacts/test_flat.csv
+  sha256: garment/artifacts/split_sha256.txt
+  note: >
+    Row unit: upper-garment mask for Fashionpedia (cropped via bbox),
+    image for Shopping100k. Empty axis label = missing-label loss masking.
+    val_flat/test_flat are NEVER used in training; tuning uses val only.
+
+model:
+  backbone: ViT-B (CLIP or DINOv2 based)     # stages A/B; finalized in Goals 6/9
+  resolution: 224                             # or 384; square-padded after segmentation
+  heads:
+    category: {type: softmax, classes: [tshirt, sweatshirt, shirt]}
+    length: {type: ordinal, classes: [crop, short, regular, long]}
+    fit: {type: ordinal, classes: [tight, regular, loose, oversize]}
+    sleeve: {type: ordinal, classes: [sleeveless, short, three_quarter, long]}
+    neckline:
+      type: softmax
+      classes: [round, v_neck, polo, shirt_collar, hooded, mandarin, boat, square, off_shoulder, collarless, other]
+    closure: {type: softmax, classes: [button, zip, none, other]}
+
+evaluation:
+  main_split: test_flat          # acceptance criteria are measured on the golden flat test
+  extra_splits: [test]           # Fashionpedia test (on-model) + Shopping100k test (flat, noisy)
+  metrics: [accuracy, within_one_class_accuracy, macro_f1, kappa, confusion_matrix]
+  acceptance:
+    category_accuracy_min: 0.85
+    category_accuracy_target: 0.90
+    axis_accuracy_min: 0.70
+    axis_accuracy_target: 0.80
+    within_one_class_min: 0.90

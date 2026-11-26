@@ -1,0 +1,83 @@
+﻿category_id,category_name,axis,attribute_id,attribute_name,mask_count_train
+0,"shirt, blouse",length,146,above-the-hip (length),2979
+0,"shirt, blouse",length,147,hip (length),1113
+0,"shirt, blouse",length,148,micro (length),317
+0,"shirt, blouse",length,149,mini (length),113
+0,"shirt, blouse",length,150,above-the-knee (length),3
+0,"shirt, blouse",length,151,knee (length),2
+0,"shirt, blouse",length,153,midi,1
+0,"shirt, blouse",sleeve,160,wrist-length,7
+0,"shirt, blouse",fit,136,regular (fit),3626
+0,"shirt, blouse",fit,135,tight (fit),724
+0,"shirt, blouse",fit,137,loose (fit),403
+0,"shirt, blouse",fit,138,oversized,34
+0,"shirt, blouse",fit,134,curved (fit),1
+0,"shirt, blouse",closure,225,single breasted,5446
+0,"shirt, blouse",closure,229,zip-up,65
+0,"shirt, blouse",closure,234,no opening,45
+0,"shirt, blouse",closure,227,lace up,37
+0,"shirt, blouse",closure,228,wrapping,34
+0,"shirt, blouse",closure,226,double breasted,3
+0,"shirt, blouse",closure,232,buckled (opening),2
+0,"shirt, blouse",closure,231,chained (opening),1
+0,"shirt, blouse",closure,233,toggled (opening),1
+1,"top, t-shirt, sweatshirt",length,146,above-the-hip (length),9640
+1,"top, t-shirt, sweatshirt",length,147,hip (length),4211
+1,"top, t-shirt, sweatshirt",length,148,micro (length),322
+1,"top, t-shirt, sweatshirt",length,149,mini (length),122
+1,"top, t-shirt, sweatshirt",length,150,above-the-knee (length),8
+1,"top, t-shirt, sweatshirt",length,151,knee (length),5
+1,"top, t-shirt, sweatshirt",length,153,midi,2
+1,"top, t-shirt, sweatshirt",length,155,floor (length),2
+1,"top, t-shirt, sweatshirt",length,154,maxi (length),1
+1,"top, t-shirt, sweatshirt",length,152,below the knee (length),1
+1,"top, t-shirt, sweatshirt",sleeve,160,wrist-length,5
+1,"top, t-shirt, sweatshirt",sleeve,159,three quarter (length),2
+1,"top, t-shirt, sweatshirt",fit,136,regular (fit),7418
+1,"top, t-shirt, sweatshirt",fit,135,tight (fit),5628
+1,"top, t-shirt, sweatshirt",fit,137,loose (fit),1224
+1,"top, t-shirt, sweatshirt",fit,138,oversized,130
+1,"top, t-shirt, sweatshirt",fit,134,curved (fit),6
+1,"top, t-shirt, sweatshirt",neckline,182,round (neck),15
+1,"top, t-shirt, sweatshirt",neckline,198,turtle (neck),5
+1,"top, t-shirt, sweatshirt",neckline,181,crew (neck),4
+1,"top, t-shirt, sweatshirt",neckline,197,high (neck),2
+1,"top, t-shirt, sweatshirt",neckline,183,v-neck,2
+1,"top, t-shirt, sweatshirt",neckline,185,oval (neck),1
+1,"top, t-shirt, sweatshirt",neckline,199,cowl (neck),1
+1,"top, t-shirt, sweatshirt",neckline,179,collarless,1
+2,sweater,length,147,hip (length),678
+2,sweater,length,146,above-the-hip (length),542
+2,sweater,length,148,micro (length),79
+2,sweater,length,149,mini (length),77
+2,sweater,length,151,knee (length),2
+2,sweater,length,150,above-the-knee (length),1
+2,sweater,sleeve,160,wrist-length,2
+2,sweater,fit,136,regular (fit),617
+2,sweater,fit,135,tight (fit),255
+2,sweater,fit,137,loose (fit),233
+2,sweater,fit,138,oversized,26
+2,sweater,fit,134,curved (fit),1
+3,cardigan,length,147,hip (length),412
+3,cardigan,length,146,above-the-hip (length),311
+3,cardigan,length,149,mini (length),177
+3,cardigan,length,148,micro (length),83
+3,cardigan,length,153,midi,21
+3,cardigan,length,150,above-the-knee (length),20
+3,cardigan,length,151,knee (length),19
+3,cardigan,length,152,below the knee (length),7
+3,cardigan,length,154,maxi (length),2
+3,cardigan,sleeve,160,wrist-length,1
+3,cardigan,fit,136,regular (fit),349
+3,cardigan,fit,137,loose (fit),169
+3,cardigan,fit,135,tight (fit),155
+3,cardigan,fit,138,oversized,24
+3,cardigan,closure,225,single breasted,573
+3,cardigan,closure,228,wrapping,122
+3,cardigan,closure,229,zip-up,30
+3,cardigan,closure,227,lace up,14
+3,cardigan,closure,226,double breasted,8
+3,cardigan,closure,234,no opening,4
+3,cardigan,closure,232,buckled (opening),3
+3,cardigan,closure,233,toggled (opening),2
+3,cardigan,closure,231,chained (opening),1
