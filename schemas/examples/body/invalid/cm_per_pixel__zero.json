@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "height_cm": 175.0,
+  "weight_kg": 72.0,
+  "cm_per_pixel": 0,
+  "shoulder_width_cm": 44.6,
+  "torso_length_cm": 62.5,
+  "body_width_cm": 36.0,
+  "pose_keypoints": [
+    {
+      "name": "left_shoulder",
+      "x_px": 412.0,
+      "y_px": 305.5,
+      "confidence": 0.98
+    },
+    {
+      "name": "right_shoulder",
+      "x_px": 268.0,
+      "y_px": 303.0,
+      "confidence": 0.97
+    },
+    {
+      "name": "left_hip",
+      "x_px": 390.5,
+      "y_px": 640.0,
+      "confidence": 0.93
+    },
+    {
+      "name": "right_hip",
+      "x_px": 290.0,
+      "y_px": 642.5,
+      "confidence": 0.94
+    }
+  ]
+}

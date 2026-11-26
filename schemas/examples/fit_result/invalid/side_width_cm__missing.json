@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "hem_from_shoulder_cm": 68.0,
+  "sleeve_end_from_shoulder_cm": 21.0,
+  "width_ease_cm": 8.0,
+  "length_ease_cm": 5.5,
+  "target_mask_path": "masks/target_001.png"
+}

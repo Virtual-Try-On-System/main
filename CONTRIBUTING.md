@@ -9,6 +9,13 @@ Code, folder names, comments, commit messages and documentation are written in E
 - `main` always passes CI. Nobody pushes to it directly.
 - Create a short-lived branch per task: `feature/<name>`, `fix/<name>` or `docs/<name>`.
 
+## Commits
+
+- Commit titles are written in English and summarize what the change does, for example
+  `Add JSON schemas for garment and body`.
+- Put the details, the reasons and the test results in the pull request description, not in
+  the commit message.
+
 ## Code review
 
 - Every change goes through a pull request.

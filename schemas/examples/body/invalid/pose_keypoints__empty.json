@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "height_cm": 175.0,
+  "weight_kg": 72.0,
+  "cm_per_pixel": 0.31,
+  "shoulder_width_cm": 44.6,
+  "torso_length_cm": 62.5,
+  "body_width_cm": 36.0,
+  "pose_keypoints": []
+}
