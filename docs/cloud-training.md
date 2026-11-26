@@ -14,6 +14,7 @@ Provider choice and prices are in [cloud-costs.md](cloud-costs.md).
 | Checkpoint save and resume | `training/checkpoint.py` |
 | Cloud storage sync with an upload allow list | `training/sync.py` |
 | One command for a GPU machine | `training/run_on_gpu_host.sh` |
+| VITON-HD data loader, split files, data check | `training/data/` (see `docs/data-card.md`) |
 
 ## How interruptions are handled
 
