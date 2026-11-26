@@ -10,6 +10,7 @@
 
 # Data and run outputs
 data/
+!training/data/
 outputs/
 checkpoints/
 mlruns/

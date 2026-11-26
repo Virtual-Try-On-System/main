@@ -1,0 +1,20 @@
+{
+  "dataset": "viton-hd",
+  "files": {
+    "test.txt": {
+      "count": 2032,
+      "sha256": "a54173857f2234ed53202e04a126f1ad9679a695f7103b398110e68b5dc052bf"
+    },
+    "train.txt": {
+      "count": 11065,
+      "sha256": "c029a4e739206dbbcd50c648a59e92c8210008038dd705c5bba122dbc946e978"
+    },
+    "val.txt": {
+      "count": 582,
+      "sha256": "0fb65f28992d65fb08b7a0214584c92e22f3a6309d3ba95c4fc62dd7040dd109"
+    }
+  },
+  "official_train_pairs": 11647,
+  "seed": 1234,
+  "val_fraction": 0.05
+}

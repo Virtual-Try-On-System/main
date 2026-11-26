@@ -15,6 +15,7 @@ Provider choice and prices are in [cloud-costs.md](cloud-costs.md).
 | Cloud storage sync with an upload allow list | `training/sync.py` |
 | One command for a GPU machine | `training/run_on_gpu_host.sh` |
 | Experiment tracking with MLflow, see [experiment-tracking.md](experiment-tracking.md) | `training/tracking.py` |
+| VITON-HD data loader, split files, data check | `training/data/` (see `docs/data-card.md`) |
 
 ## How interruptions are handled
 
